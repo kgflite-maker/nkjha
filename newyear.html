@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy New Year 2026 - Naresh Digital Seva</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* बैकग्राउंड डिज़ाइन (आतिशबाजी जैसा रंग) */
+        body {
+            background: radial-gradient(circle, #1a2a6c, #b21f1f, #fdbb2d);
+            background-size: 400% 400%;
+            animation: gradientBG 10s ease infinite;
+            color: white; font-family: 'Poppins', sans-serif;
+            text-align: center; margin: 0; padding: 20px;
+            min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* कार्ड का डिज़ाइन (कांच जैसा चमकने वाला) */
+        .card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(12px);
+            padding: 40px 25px;
+            border-radius: 25px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.6); /* Gold Glow */
+            max-width: 400px; width: 100%;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        /* हेडिंग और टेक्स्ट */
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 4rem; margin: 10px 0;
+            color: #FFD700;
+            text-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+            line-height: 1.2;
+        }
+        
+        h2 { font-size: 1.2rem; font-weight: bold; margin-bottom: 5px; text-transform: uppercase; letter-spacing: 1px; }
+        p { font-size: 0.95rem; color: #f0f0f0; margin-bottom: 25px; line-height: 1.6; }
+
+        /* फोटो स्टाइल */
+        .profile-pic {
+            width: 130px; height: 130px; border-radius: 50%;
+            border: 5px solid #fff;
+            object-fit: cover; margin-bottom: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        }
+
+        /* बटन स्टाइल */
+        .btn {
+            display: flex; align-items: center; justify-content: center; gap: 10px;
+            width: 100%; padding: 14px; margin: 12px 0; border-radius: 50px;
+            text-decoration: none; font-weight: bold; font-size: 1.1rem;
+            transition: 0.3s; color: white; border: none; cursor: pointer;
+        }
+        .btn-whatsapp { background: linear-gradient(45deg, #25d366, #128c7e); box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4); }
+        .btn-pay { background: linear-gradient(45deg, #00baf2, #0072ff); box-shadow: 0 5px 15px rgba(0, 186, 242, 0.4); }
+        .btn-home { background: rgba(255,255,255,0.2); border: 2px solid white; margin-top: 20px; font-size: 0.9rem; }
+
+        .btn:hover { transform: scale(1.05); filter: brightness(1.2); }
+
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img src="NARESH KUMAR JHA.jpg" alt="Naresh Kumar Jha" class="profile-pic">
+        
+        <h2>Naresh Digital Seva Kendra</h2>
+        <h1>Happy New Year<br>2026</h1>
+        
+        <p>
+            ✨ नये साल की हार्दिक शुभकामनाएँ! ✨<br>
+            "आपकी प्रगति ही हमारा संकल्प है।"<br>
+            किसी भी ऑनलाइन सेवा के लिए हमसे जुड़ें।
+        </p>
+
+        <a href="https://wa.me/917895490451?text=Happy%20New%20Year%20Naresh%20Bhai!%20🎉" class="btn btn-whatsapp">
+            <i class="fab fa-whatsapp"></i> WhatsApp पर बधाई दें
+        </a>
+
+        <a href="payment.html" class="btn btn-pay">
+            <i class="fas fa-qrcode"></i> पेमेंट करें (Paytm QR)
+        </a>
+
+        <a href="index.html" class="btn btn-home">
+            🏠 मेन वेबसाइट पर जाएँ
+        </a>
+    </div>
+
+</body>
+</html>
